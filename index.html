@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #rs {
+            display: none;
+        }
+
+        #dis {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Guess the number!</h1>
+    <h3>guesss the number form 1 to 100 in 10 guesses</h3>
+    <input type="button" value="Start" onclick="start()">
+    <div id="dis">
+        <input type="text" name="number" id="guess">
+        <input id="s" type="button" value="Enter" onclick="game()">
+        <input id="rs" type="button" value="Restart" onclick="restart()">
+        <h4 id="chances"></h4>
+        <h4 id="out"></h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
